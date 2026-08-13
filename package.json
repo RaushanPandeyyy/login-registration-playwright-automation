@@ -1,0 +1,16 @@
+{
+  "name": "login-registration-automation",
+  "version": "1.0.0",
+  "description": "A beginner-friendly login and registration app with an automated Playwright test suite.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}

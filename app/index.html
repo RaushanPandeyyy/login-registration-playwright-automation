@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Login</h1>
+
+    <form id="login-form">
+      <label for="login-email">Email</label>
+      <input
+        type="text"
+        id="login-email"
+        data-testid="login-email"
+        placeholder="Enter your email"
+      />
+
+      <label for="login-password">Password</label>
+      <input
+        type="password"
+        id="login-password"
+        data-testid="login-password"
+        placeholder="Enter your password"
+      />
+
+      <button type="submit" id="login-button" data-testid="login-button">
+        Login
+      </button>
+
+      <p id="login-message" data-testid="login-message"></p>
+    </form>
+
+    <p class="switch-link">
+      Don't have an account? <a href="register.html">Register here</a>
+    </p>
+
+    <p class="hint">
+      Demo credentials — Email: <b>test@example.com</b> | Password: <b>Test@123</b>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

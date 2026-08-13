@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Register</h1>
+
+    <form id="register-form">
+      <label for="register-fullname">Full Name</label>
+      <input
+        type="text"
+        id="register-fullname"
+        data-testid="register-fullname"
+        placeholder="Enter your full name"
+      />
+
+      <label for="register-email">Email</label>
+      <input
+        type="text"
+        id="register-email"
+        data-testid="register-email"
+        placeholder="Enter your email"
+      />
+
+      <label for="register-password">Password</label>
+      <input
+        type="password"
+        id="register-password"
+        data-testid="register-password"
+        placeholder="Enter your password"
+      />
+
+      <label for="register-confirm-password">Confirm Password</label>
+      <input
+        type="password"
+        id="register-confirm-password"
+        data-testid="register-confirm-password"
+        placeholder="Re-enter your password"
+      />
+
+      <button type="submit" id="register-button" data-testid="register-button">
+        Register
+      </button>
+
+      <p id="register-message" data-testid="register-message"></p>
+    </form>
+
+    <p class="switch-link">
+      Already have an account? <a href="index.html">Login here</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
